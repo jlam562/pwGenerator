@@ -21,7 +21,7 @@ function generatePassword() {
   var sym = ['!','@','#','$','%','^','&','*','(',')','-','_','=','+']
   var password = ''
 
-  var pwlength = parseInt(prompt('How long do you want the password length to be?'))
+  var pwLength = parseInt(prompt('How long do you want the password length to be?'))
   var upperCaseChar = confirm('Would you like a uppercase letter?:')
   var lowerCaseChar = confirm('Would you like a lowercase letter?:')
   var numChar = confirm('Would you like a number?:')
@@ -36,7 +36,7 @@ function generatePassword() {
   if (symChar)
     password += sym
 
-for (var i=0; i < pwlength; i++) {
+for (var i=0; i < pwLength; i++) {
   var char = password.charAt(Math.floor(Math.random() * password.length))
 }
 
